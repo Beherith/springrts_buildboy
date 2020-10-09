@@ -1,5 +1,5 @@
 ├── AI
-│   ├── Interfaces
+│   ├── Interfaces #check!
 │   │   ├── C
 │   │   │   └── 0.1
 │   │   │       ├── AIInterface.dll
@@ -12,7 +12,7 @@
 │   │           ├── jlib
 │   │           │   └── AIInterface-src.jar
 │   │           └── jvm.properties
-│   └── Skirmish
+│   └── Skirmish #missing
 │       ├── AAI
 │       │   └── 0.9
 │       │       ├── AIInfo.lua
@@ -268,7 +268,7 @@
 │   └── springcontent.sdz
 ├── cmdcolors.txt
 ├── ctrlpanel.txt
-├── DevIL.dll
+├── DevIL.dll #missing
 ├── doc
 │   ├── AUTHORS
 │   ├── COPYING
@@ -380,20 +380,20 @@
 │   └── widgets.lua
 ├── luaui.lua
 ├── maps
-├── ogg.dll
+├── ogg.dll #missing
 ├── OpenAL32.dll
 ├── pr-downloader.exe
 ├── README-SDL.txt
-├── SDL2.dll
-├── socket.lua
+├── SDL2.dll 
+├── socket.lua #not sure if this is correct
 ├── spring-dedicated.exe
 ├── spring.exe
 ├── spring-headless.exe
 ├── springsettings.cfg
-├── unitsync.dll
-├── vcredist_x86.exe
-├── vorbis.dll
-├── vorbisfile.dll
+├── unitsync.dll 
+├── vcredist_x86.exe #missing
+├── vorbis.dll #missing
+├── vorbisfile.dll #missing
 └── zlib1.dll
  
 67 directories, 330 files
