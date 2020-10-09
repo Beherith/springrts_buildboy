@@ -1,0 +1,399 @@
+├── AI
+│   ├── Interfaces
+│   │   ├── C
+│   │   │   └── 0.1
+│   │   │       ├── AIInterface.dll
+│   │   │       └── InterfaceInfo.lua
+│   │   └── Java
+│   │       └── 0.1
+│   │           ├── AIInterface.dll
+│   │           ├── AIInterface.jar
+│   │           ├── InterfaceInfo.lua
+│   │           ├── jlib
+│   │           │   └── AIInterface-src.jar
+│   │           └── jvm.properties
+│   └── Skirmish
+│       ├── AAI
+│       │   └── 0.9
+│       │       ├── AIInfo.lua
+│       │       ├── AIOptions.lua
+│       │       ├── cfg
+│       │       │   ├── general.cfg
+│       │       │   ├── help
+│       │       │   │   ├── example_general.cfg
+│       │       │   │   └── example_mod.cfg
+│       │       │   └── mod
+│       │       │       ├── AA5.0project.cfg
+│       │       │       ├── AAIA10.cfg
+│       │       │       ├── BA.cfg
+│       │       │       ├── BAR.cfg
+│       │       │       ├── BOTA.cfg
+│       │       │       ├── CA-BETA1.cfg
+│       │       │       ├── Expand_and_Exterminate_v_0.171.cfg
+│       │       │       ├── FF_1.21_S.cfg
+│       │       │       ├── gundam_1.1_epic.cfg
+│       │       │       ├── gundam_1.1_tiny.cfg
+│       │       │       ├── KuroTA-v047.cfg
+│       │       │       ├── PURE0.51.cfg
+│       │       │       ├── S44Lyuban_v106.cfg
+│       │       │       ├── StarWars01.cfg
+│       │       │       ├── TA.cfg
+│       │       │       ├── tc.cfg
+│       │       │       ├── XTA.cfg
+│       │       │       └── XTAPEV9585.cfg
+│       │       ├── FAQ.txt
+│       │       ├── README.md
+│       │       └── SkirmishAI.dll
+│       ├── CppTestAI
+│       │   └── 0.1
+│       │       ├── AIInfo.lua
+│       │       ├── AIOptions.lua
+│       │       └── SkirmishAI.dll
+│       ├── E323AI
+│       │   └── 3.25.0
+│       │       ├── AIInfo.lua
+│       │       ├── AIOptions.lua
+│       │       ├── configs
+│       │       │   ├── BA-categorization.cfg
+│       │       │   ├── BA-categorization-patch.cfg
+│       │       │   ├── BA-config.cfg
+│       │       │   ├── BOTA-categorization.cfg
+│       │       │   ├── BOTA-config.cfg
+│       │       │   ├── ca-categorization.cfg
+│       │       │   ├── ca-config.cfg
+│       │       │   ├── ct-categorization.cfg
+│       │       │   ├── ct-config.cfg
+│       │       │   ├── NOTA-categorization.cfg
+│       │       │   ├── NOTA-config.cfg
+│       │       │   ├── SA-categorization.cfg
+│       │       │   ├── SA-config.cfg
+│       │       │   ├── template-config.cfg
+│       │       │   ├── XTA-categorization.cfg
+│       │       │   └── XTA-config.cfg
+│       │       └── SkirmishAI.dll
+│       ├── HughAI
+│       │   └── 0.1
+│       │       ├── AIInfo.lua
+│       │       ├── AIOptions.lua
+│       │       ├── EcmaConsoleTemplate.txt
+│       │       ├── JavaConsoleTemplate.txt
+│       │       ├── jlib
+│       │       │   ├── JavaOO-AIWrapper.jar
+│       │       │   ├── SkirmishAI-src.jar
+│       │       │   ├── UnderlyingAI-src.jar
+│       │       │   ├── vecmath.jar
+│       │       │   └── vecmath-src.jar
+│       │       ├── SkirmishAI.jar
+│       │       ├── UnderlyingAI.jar
+│       │       └── workflows
+│       │           └── BA
+│       │               └── default.xml
+│       ├── KAIK
+│       │   └── 0.13
+│       │       ├── AIInfo.lua
+│       │       ├── AIOptions.lua
+│       │       └── SkirmishAI.dll
+│       ├── NullAI
+│       │   └── 0.1
+│       │       ├── AIInfo.lua
+│       │       ├── AIOptions.lua
+│       │       └── SkirmishAI.dll
+│       ├── NullJavaAI
+│       │   └── 0.1
+│       │       ├── AIInfo.lua
+│       │       ├── AIOptions.lua
+│       │       ├── jlib
+│       │       │   └── SkirmishAI-src.jar
+│       │       └── SkirmishAI.jar
+│       ├── NullOOJavaAI
+│       │   └── 0.1
+│       │       ├── AIInfo.lua
+│       │       ├── AIOptions.lua
+│       │       ├── jlib
+│       │       │   ├── JavaOO-AIWrapper.jar
+│       │       │   ├── SkirmishAI-src.jar
+│       │       │   ├── vecmath.jar
+│       │       │   └── vecmath-src.jar
+│       │       └── SkirmishAI.jar
+│       ├── RAI
+│       │   └── 0.601
+│       │       ├── AIInfo.lua
+│       │       ├── AIOptions.lua
+│       │       └── SkirmishAI.dll
+│       └── Shard
+│           └── dev
+│               ├── ai
+│               │   ├── ai.lua
+│               │   ├── attackerbehaviour.lua
+│               │   ├── attackers.lua
+│               │   ├── attackhandler.lua
+│               │   ├── BA
+│               │   │   ├── antinukebehaviour.lua
+│               │   │   ├── assistbehaviour.lua
+│               │   │   ├── assisthandler.lua
+│               │   │   ├── attackerbehaviour.lua
+│               │   │   ├── attackhandler.lua
+│               │   │   ├── behaviours.lua
+│               │   │   ├── bombardbehaviour.lua
+│               │   │   ├── bomberbehaviour.lua
+│               │   │   ├── bomberhandler.lua
+│               │   │   ├── bootbehaviour.lua
+│               │   │   ├── buildsitehandler.lua
+│               │   │   ├── cleanerbehaviour.lua
+│               │   │   ├── cleanhandler.lua
+│               │   │   ├── commonfunctions.lua
+│               │   │   ├── common.lua
+│               │   │   ├── countbehaviour.lua
+│               │   │   ├── counthandler.lua
+│               │   │   ├── damagehandler.lua
+│               │   │   ├── defendbehaviour.lua
+│               │   │   ├── defendhandler.lua
+│               │   │   ├── devwidgets
+│               │   │   │   ├── ShardGetUnittable.lua
+│               │   │   │   ├── shard_help_debug_visualizer.lua
+│               │   │   │   └── shard_help_unit_table.lua
+│               │   │   ├── econhandler.lua
+│               │   │   ├── factoryregisterbehaviour.lua
+│               │   │   ├── featuretable-BA.lua
+│               │   │   ├── featuretable-BAR.lua
+│               │   │   ├── getunitfeaturetable.lua
+│               │   │   ├── loshandler.lua
+│               │   │   ├── maphandler.lua
+│               │   │   ├── mexupgradebehaviour.lua
+│               │   │   ├── modules.lua
+│               │   │   ├── nukebehaviour.lua
+│               │   │   ├── raiderbehaviour.lua
+│               │   │   ├── raidhandler.lua
+│               │   │   ├── reclaimbehaviour.lua
+│               │   │   ├── scoutbehaviour.lua
+│               │   │   ├── scouthandler.lua
+│               │   │   ├── tacticalhandler.lua
+│               │   │   ├── targethandler.lua
+│               │   │   ├── taskAir.lua
+│               │   │   ├── taskBot.lua
+│               │   │   ├── taskBuild.lua
+│               │   │   ├── taskEco.lua
+│               │   │   ├── taskExp.lua
+│               │   │   ├── taskHov.lua
+│               │   │   ├── taskqueuebehaviour.lua
+│               │   │   ├── taskqueues.lua
+│               │   │   ├── taskShp.lua
+│               │   │   ├── taskVeh.lua
+│               │   │   ├── turtlehandler.lua
+│               │   │   ├── unitlists.lua
+│               │   │   ├── unittable-BA.lua
+│               │   │   ├── unittable-BAR.lua
+│               │   │   └── wardbehaviour.lua
+│               │   ├── behaviourfactory.lua
+│               │   ├── behaviour.lua
+│               │   ├── behaviours.lua
+│               │   ├── bootbehaviour.lua
+│               │   ├── boot.lua
+│               │   ├── ca
+│               │   │   ├── attackers.lua
+│               │   │   ├── behaviours.lua
+│               │   │   └── taskqueues.lua
+│               │   ├── capturerbehaviour.lua
+│               │   ├── controlpointhandler.lua
+│               │   ├── ct
+│               │   │   ├── attackers.lua
+│               │   │   ├── behaviours.lua
+│               │   │   └── taskqueues.lua
+│               │   ├── KP
+│               │   │   ├── attackers.lua
+│               │   │   └── taskqueues.lua
+│               │   ├── KP.n
+│               │   │   ├── attackers.lua
+│               │   │   └── taskqueues.lua
+│               │   ├── modules.lua
+│               │   ├── pointcapturerbehaviour.lua
+│               │   ├── preload
+│               │   │   ├── aibase.lua
+│               │   │   ├── api.lua
+│               │   │   ├── class.lua
+│               │   │   ├── globals.lua
+│               │   │   ├── hooks.lua
+│               │   │   ├── module.lua
+│               │   │   ├── shard_null
+│               │   │   │   ├── boot.lua
+│               │   │   │   └── game.lua
+│               │   │   ├── spring_lua
+│               │   │   │   ├── boot.lua
+│               │   │   │   ├── controlpoint.lua
+│               │   │   │   ├── damage.lua
+│               │   │   │   ├── fakeapi.lua
+│               │   │   │   ├── fakeos.lua
+│               │   │   │   ├── feature.lua
+│               │   │   │   ├── game.lua
+│               │   │   │   ├── map.lua
+│               │   │   │   ├── metal.lua
+│               │   │   │   ├── shard.lua
+│               │   │   │   ├── unit.lua
+│               │   │   │   └── unittype.lua
+│               │   │   └── spring_native
+│               │   │       ├── boot.lua
+│               │   │       ├── game.lua
+│               │   │       ├── map.lua
+│               │   │       ├── unit.lua
+│               │   │       └── unittype.lua
+│               │   ├── sleep.lua
+│               │   ├── spothandler.lua
+│               │   ├── taskqueuebehaviour.lua
+│               │   ├── taskqueues.lua
+│               │   ├── The Cursed
+│               │   │   ├── attackers.lua
+│               │   │   └── taskqueues.lua
+│               │   ├── unithandler.lua
+│               │   ├── unit.lua
+│               │   └── ZK
+│               │       ├── assistbehaviour.lua
+│               │       ├── attackerbehaviour.lua
+│               │       ├── attackers.lua
+│               │       ├── behaviours.lua
+│               │       ├── commonfunctions.lua
+│               │       ├── json.lua
+│               │       ├── spothandler.lua
+│               │       ├── taskqueuebehaviour.lua
+│               │       └── taskqueues.lua
+│               ├── AIInfo.lua
+│               ├── AIOptions.lua
+│               ├── devwidgets
+│               │   └── shard_help_draw.lua
+│               └── SkirmishAI.dll
+├── base
+│   ├── cursors.sdz
+│   ├── maphelper.sdz
+│   ├── spring
+│   │   └── bitmaps.sdz
+│   └── springcontent.sdz
+├── cmdcolors.txt
+├── ctrlpanel.txt
+├── DevIL.dll
+├── doc
+│   ├── AUTHORS
+│   ├── COPYING
+│   ├── FAQ
+│   ├── gpl-2.0.txt
+│   ├── gpl-3.0.txt
+│   ├── LICENSE
+│   ├── README.markdown
+│   └── THANKS
+├── examples
+│   └── Widgets
+│       ├── camera_shake.lua
+│       ├── camera_smooth_move.lua
+│       ├── download.lua
+│       ├── game_messages.lua
+│       ├── gui_buildspacing.lua
+│       ├── gui_hilight_unit.lua
+│       ├── gui_selbuttons.lua
+│       ├── gui_team_platter.lua
+│       ├── gui_xray_shader.lua
+│       ├── headless_setup.lua
+│       ├── init_start_marker.lua
+│       ├── luasocket_console.lua
+│       ├── luasocket.lua
+│       ├── minimap_relative.lua
+│       ├── minimap_startbox.lua
+│       ├── unit_factory_guard.lua
+│       ├── unit_immobile_builder.lua
+│       ├── unit_metal_maker.lua
+│       ├── unit_stockpile.lua
+│       └── watchdog.lua
+├── fonts
+│   ├── AUTHORS
+│   ├── COPYING
+│   ├── CREDITS
+│   ├── FreeSansBold.otf
+│   └── README
+├── games
+├── glew32.dll
+├── libexpat-1.dll
+├── libfontconfig-1.dll
+├── libfreetype-6.dll
+├── LuaUI
+│   ├── actions.lua
+│   ├── callins.lua
+│   ├── Config
+│   │   └── README.txt
+│   ├── ctrlpanel.txt
+│   ├── debug.lua
+│   ├── flags.lua
+│   ├── Fonts
+│   │   ├── FreeMonoBold_12.lua
+│   │   └── FreeMonoBold_12.png
+│   ├── fonts.lua
+│   ├── Headers
+│   │   ├── colors.h.lua
+│   │   └── keysym.h.lua
+│   ├── Icons
+│   │   ├── chi.png
+│   │   ├── cross.png
+│   │   ├── diamond.png
+│   │   ├── e.png
+│   │   ├── hemi-down.png
+│   │   ├── hemi.png
+│   │   ├── hemi-up.png
+│   │   ├── hourglass.png
+│   │   ├── hourglass-side.png
+│   │   ├── m-down.png
+│   │   ├── m.png
+│   │   ├── m-up.png
+│   │   ├── sphere.png
+│   │   ├── square.png
+│   │   ├── square_+.png
+│   │   ├── square_x.png
+│   │   ├── star-dark.png
+│   │   ├── star.png
+│   │   ├── triangle-down.png
+│   │   ├── triangle-up.png
+│   │   ├── tri-down.png
+│   │   ├── tri-up.png
+│   │   └── x.png
+│   ├── Images
+│   │   ├── flags25x15.png
+│   │   ├── highlight_strip.png
+│   │   └── players.png
+│   ├── layout.lua
+│   ├── loadmodel.lua
+│   ├── main.lua
+│   ├── Models
+│   │   ├── colors.lua
+│   │   ├── colors.mtl
+│   │   └── colors.obj
+│   ├── savetable.lua
+│   ├── selector.lua
+│   ├── setupdefs.lua
+│   ├── Sounds
+│   │   ├── bounce.wav
+│   │   ├── flag_grab.wav
+│   │   ├── land.wav
+│   │   ├── message_admin.wav
+│   │   ├── message_private.wav
+│   │   ├── message_team.wav
+│   │   ├── pop.wav
+│   │   ├── README.txt
+│   │   └── teamgrab.wav
+│   ├── system.lua
+│   ├── tweakmode.lua
+│   ├── utils.lua
+│   └── widgets.lua
+├── luaui.lua
+├── maps
+├── ogg.dll
+├── OpenAL32.dll
+├── pr-downloader.exe
+├── README-SDL.txt
+├── SDL2.dll
+├── socket.lua
+├── spring-dedicated.exe
+├── spring.exe
+├── spring-headless.exe
+├── springsettings.cfg
+├── unitsync.dll
+├── vcredist_x86.exe
+├── vorbis.dll
+├── vorbisfile.dll
+└── zlib1.dll
+ 
+67 directories, 330 files
