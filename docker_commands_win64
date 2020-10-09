@@ -1,0 +1,58 @@
+# Spring x64 mingw/Windows build
+
+FROM ubuntu:latest
+ARG SPRING_BRANCH=maintenance
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt -y update && apt -y upgrade && apt -y install git cmake
+
+RUN echo "Cloning ${SPRING_BRANCH} branch of spring" 
+RUN git clone --recursive git://github.com/spring/spring.git -b ${SPRING_BRANCH} /root/spring
+RUN git clone https://github.com/spring/mingwlibs64 /root/spring/mingwlibs64
+
+RUN apt -y install mingw-w64 \
+    default-jre default-jdk \
+    nsis \
+    wine-development \
+    clang-format
+    
+RUN apt -y install \
+    bash \
+    bison \
+    bzip2 \
+    flex \
+    gettext \
+    git \
+    gperf \
+    intltool \
+    libc6-dev-i386 \
+    libssl-dev \
+    libtool-bin \
+    lzip \
+    make \
+    p7zip-full \
+    unzip \
+    wget \
+    xz-utils
+
+RUN apt -y remove gcc g++ && apt -y remove g++-mingw-w64-i686 binutils-mingw-w64-i686 gcc-mingw-w64-i686 mingw-w64-i686-dev
+
+WORKDIR /root/spring
+
+RUN \
+    touch my.cmake && \
+    echo "SET(CMAKE_SYSTEM_NAME Windows)" >> my.cmake && \
+    echo "SET(CMAKE_C_COMPILER x86_64-w64-mingw32-gcc-posix)" >> my.cmake && \
+      echo "SET(CMAKE_CXX_COMPILER x86_64-w64-mingw32-g++-posix)" >> my.cmake && \
+    echo "SET(CMAKE_RC_COMPILER x86_64-w64-mingw32-windres)" >> my.cmake
+    
+RUN cat ./my.cmake
+
+RUN cmake -DCMAKE_TOOLCHAIN_FILE=./my.cmake -DCMAKE_BUILD_TYPE=RELWITHDEBINFO -DAI_TYPES=NONE .
+RUN make all -j$(nproc)
+
+COPY ./strip.sh /root/spring/
+RUN ./strip.sh
+
+RUN apt -y install zip
